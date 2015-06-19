@@ -23,7 +23,7 @@
         this.construct.apply(this, arguments);
     };
     Prototyper.prototype.construct = function() {};
-    Prototyper.prototype.getBindedMethod = function(name) {
+    Prototyper.prototype.getMethod = function(name) {
         var bindedMethod = this[name];
         var self = this;
         return function() {
